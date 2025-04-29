@@ -1,0 +1,13 @@
+@use "../util" as u;
+
+.header {
+    position: relative;
+}
+
+.background {
+    &__image {
+        width: 100%;
+        max-height: u.rem(650);
+        object-fit: cover;
+    }
+}
