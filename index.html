@@ -18,10 +18,18 @@
     <body>
         <header class="header">
             <picture class="background">
-                <img class="background__image" src="/images/mobile/image-hero.jpg" alt="Hero" />
+                <source
+                    srcset="/images/desktop/image-hero.jpg"
+                    media="(min-width: 40em)"
+                />
+                <img
+                    class="background__image"
+                    src="/images/mobile/image-hero.jpg"
+                    alt="Hero"
+                />
             </picture>
-            <div>
-                <img src="/images/logo.svg" alt="Loopstudios" />
+            <div class="flex justify-between align-center">
+                <img src="/images/logo.svg" alt="Loopstudios" height="24" />
                 <nav class="hidden">
                     <ul>
                         <li>
@@ -41,11 +49,11 @@
                         </li>
                     </ul>
                 </nav>
-                <button>
+                <button class="header__menu-button">
                     <img src="/images/icon-hamburger.svg" alt="Menu" />
                 </button>
             </div>
-            <div>
+            <div class="header__title">
                 <h1>Immersive experiences that deliver</h1>
             </div>
         </header>

@@ -1,13 +1,32 @@
-@use "../util" as u;
+@use "../abstracts" as a;
 
 .header {
     position: relative;
+    padding: a.rem(40) a.rem(24);
+    height: a.rem(650);
+    display: flex;
+    flex-direction: column;
+
+    &__menu-button {
+        background-color: transparent;
+        border: none;
+    }
+
+    &__title {
+        margin-block: auto;
+        border: a.rem(2) solid white;
+        padding: a.rem(24);
+        color: white;
+    }
 }
 
 .background {
     &__image {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
         width: 100%;
-        max-height: u.rem(650);
+        height: a.rem(650);
         object-fit: cover;
     }
 }

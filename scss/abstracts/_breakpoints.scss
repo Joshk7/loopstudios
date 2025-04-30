@@ -1,11 +1,9 @@
-@use "../util" as u;
-
 $breakpoints-up: (
-    "sm": u.em(640),
-    "md": u.em(768),
-    "lg": u.em(1024),
-    "xl": u.em(1280),
-    "2xl": u.em(1536),
+    "sm": em(640),
+    "md": em(768),
+    "lg": em(1024),
+    "xl": em(1280),
+    "2xl": em(1536),
 );
 
 @mixin breakpoint($size) {
