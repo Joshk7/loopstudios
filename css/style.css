@@ -20,14 +20,12 @@ svg {
   max-width: 100%;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
+:root {
+  --font-family-primary: "Josefin Sans";
+}
+
+body {
+  font-family: var(--font-family-primary);
 }
 
 .hidden {
@@ -66,6 +64,9 @@ h6 {
   border: 0.125rem solid white;
   padding: 1.5rem;
   color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: clamp(2.25rem, 1.607rem + 3.214vw, 4.5rem);
 }
 
 .background__image {

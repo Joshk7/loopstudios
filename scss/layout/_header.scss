@@ -17,6 +17,9 @@
         border: a.rem(2) solid white;
         padding: a.rem(24);
         color: white;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: clamp(2.25rem, 1.607rem + 3.214vw, 4.5rem)
     }
 }
 
