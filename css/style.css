@@ -77,4 +77,8 @@ body {
   height: 40.625rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.main {
+  padding: 6rem 1.5rem;
 }/*# sourceMappingURL=style.css.map */
