@@ -1,3 +1,4 @@
+@use "../abstracts/" as a;
 
 .hidden {
     display: none;
@@ -11,11 +12,14 @@
     flex-direction: column;
 }
 
-
 .justify-between {
     justify-content: space-between;
 }
 
 .items-center {
     align-items: center;
+}
+
+.gap-y-4 {
+    row-gap: a.rem(16);
 }

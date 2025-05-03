@@ -2,4 +2,20 @@
 
 .main {
     padding: a.rem(96) a.rem(24);
+    row-gap: a.rem(96);
+}
+
+
+.info {
+    &__content {
+        padding: a.rem(48) a.rem(24) 0 a.rem(24);
+    }
+
+    &__header {
+        text-align: center;
+    }
+
+    &__description {
+        text-align: center;
+    }
 }
