@@ -4,8 +4,6 @@
     position: relative;
     padding: a.rem(40) a.rem(24);
     height: a.rem(650);
-    display: flex;
-    flex-direction: column;
 
     &__menu-button {
         background-color: transparent;
@@ -16,6 +14,19 @@
         margin-block: auto;
         border: a.rem(2) solid white;
         padding: a.rem(24);
+
+        @include a.breakpoint("sm") {
+            padding: a.rem(40);
+        }
+    }
+
+    @include a.breakpoint("sm") {
+        padding-block: a.rem(64);
+
+        &__logo {
+            width: a.rem(192);
+            height: a.rem(32);
+        }
     }
 }
 

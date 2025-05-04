@@ -4,6 +4,14 @@
     display: none;
 }
 
+.wrapper-large {
+    max-width: a.rem(1110);
+}
+
+.wrapper-small {
+    max-width: a.rem(650);
+}
+
 .flex {
     display: flex;
 }
@@ -16,6 +24,10 @@
     justify-content: space-between;
 }
 
+.justify-end {
+    justify-content: flex-end;
+}
+
 .items-center {
     align-items: center;
 }
@@ -23,3 +35,24 @@
 .gap-y-4 {
     row-gap: a.rem(16);
 }
+
+.gap-x-8 {
+    column-gap: a.rem(32);
+}
+
+.mx-auto {
+    margin-inline: auto;
+}
+
+.my-auto {
+    margin-block: auto;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-full {
+    width: 100%;
+}
+

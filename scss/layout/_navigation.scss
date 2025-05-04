@@ -1,0 +1,28 @@
+@use "../abstracts/" as a;
+
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    &__link {
+        position: relative;
+        text-decoration: none;
+        color: var(--white);
+        cursor: pointer;
+    }
+
+    &__link:hover::after,
+    &__link:focus::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: a.rem(2);
+        bottom: a.rem(-8);
+        left: 25%;
+        background-color: var(--white);
+        margin-block-start: a.rem(8);
+    }
+}

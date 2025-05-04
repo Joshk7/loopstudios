@@ -22,7 +22,8 @@ svg {
 
 :root {
   --font-family-primary: "Josefin Sans";
-  --font-family-secondary: "" ;
+  --font-family-secondary: "Alata";
+  --white: #FFFFFF;
 }
 
 body {
@@ -34,6 +35,7 @@ h1 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: clamp(2.25rem, 1.607rem + 3.214vw, 4.5rem);
+  line-height: 1;
 }
 
 h2 {
@@ -43,7 +45,7 @@ h2 {
 }
 
 p {
-  font-family: "Alata";
+  font-family: var(--font-family-secondary);
   font-size: 0.9375rem;
   line-height: 1.5625rem;
   opacity: 0.5;
@@ -51,6 +53,14 @@ p {
 
 .hidden {
   display: none;
+}
+
+.wrapper-large {
+  max-width: 69.375rem;
+}
+
+.wrapper-small {
+  max-width: 40.625rem;
 }
 
 .flex {
@@ -65,6 +75,10 @@ p {
   justify-content: space-between;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -73,12 +87,31 @@ p {
   row-gap: 1rem;
 }
 
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
+
+.my-auto {
+  margin-block: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .header {
   position: relative;
   padding: 2.5rem 1.5rem;
   height: 40.625rem;
-  display: flex;
-  flex-direction: column;
 }
 .header__menu-button {
   background-color: transparent;
@@ -89,6 +122,20 @@ p {
   border: 0.125rem solid white;
   padding: 1.5rem;
 }
+@media (min-width: 40em) {
+  .header__title {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 40em) {
+  .header {
+    padding-block: 4rem;
+  }
+  .header__logo {
+    width: 12rem;
+    height: 2rem;
+  }
+}
 
 .background__image {
   position: absolute;
@@ -98,6 +145,28 @@ p {
   height: 40.625rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.nav__link {
+  position: relative;
+  text-decoration: none;
+  color: var(--white);
+  cursor: pointer;
+}
+.nav__link:hover::after, .nav__link:focus::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0.125rem;
+  bottom: -0.5rem;
+  left: 25%;
+  background-color: var(--white);
+  margin-block-start: 0.5rem;
 }
 
 .main {

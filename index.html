@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="/css/style.css" />
     </head>
     <body>
-        <header class="header">
+        <header class="header flex flex-col">
             <picture class="background">
                 <source
                     srcset="/images/desktop/image-hero.jpg"
@@ -34,36 +34,44 @@
                     alt="Hero"
                 />
             </picture>
-            <div class="flex justify-between align-center">
-                <img src="/images/logo.svg" alt="Loopstudios" height="24" />
-                <nav class="hidden">
-                    <ul>
-                        <li>
-                            <a href="#"> About </a>
-                        </li>
-                        <li>
-                            <a href="#"> Careers </a>
-                        </li>
-                        <li>
-                            <a href="#"> Events </a>
-                        </li>
-                        <li>
-                            <a href="#"> Products </a>
-                        </li>
-                        <li>
-                            <a href="#"> Support </a>
-                        </li>
-                    </ul>
-                </nav>
-                <button class="header__menu-button">
-                    <img src="/images/icon-hamburger.svg" alt="Menu" />
-                </button>
+            <div class="h-full w-full flex flex-col wrapper-large mx-auto">
+                <div class="flex justify-between">
+                    <img class="header__logo" src="/images/logo.svg" alt="Loopstudios" height="24" />
+                    <nav class="nav my-auto">
+                        <ul class="nav__list gap-y-4 gap-x-8">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#"> About </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#"> Careers </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#"> Events </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#"> Products </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#"> Support </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__menu-button hidden">
+                        <img src="/images/icon-hamburger.svg" alt="Menu" />
+                    </button>
+                </div>
+                <h1 class="header__title wrapper-small">
+                    Immersive experiences that deliver
+                </h1>
             </div>
-            <h1 class="header__title">Immersive experiences that deliver</h1>
         </header>
         <main class="main flex flex-col">
             <section class="info">
                 <picture>
+                    <source
+                        srcset="/images/desktop/image-interactive.jpg"
+                        media="(min-width: 40em)"
+                    />
                     <img src="/images/mobile/image-interactive.jpg" alt="" />
                 </picture>
                 <div class="info__content flex flex-col gap-y-4">

@@ -1,9 +1,11 @@
+@use "./functions" as f;
+
 $breakpoints-up: (
-    "sm": em(640),
-    "md": em(768),
-    "lg": em(1024),
-    "xl": em(1280),
-    "2xl": em(1536),
+    "sm": f.em(640),
+    "md": f.em(768),
+    "lg": f.em(1024),
+    "xl": f.em(1280),
+    "2xl": f.em(1536),
 );
 
 @mixin breakpoint($size) {
@@ -13,11 +15,11 @@ $breakpoints-up: (
 }
 
 // $breakpoints-down: (
-//     "sm": f.em(639.98),
-//     "md": f.em(767.98),
-//     "lg": f.em(1023.98),
-//     "xl": f.em(1279.98),
-//     "2xl": f.em(1535.98),
+//     "sm": f.f.em(639.98),
+//     "md": f.f.em(767.98),
+//     "lg": f.f.em(1023.98),
+//     "xl": f.f.em(1279.98),
+//     "2xl": f.f.em(1535.98),
 // );
 
 // @mixin breakpoint-down($size) {

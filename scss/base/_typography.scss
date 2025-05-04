@@ -9,6 +9,7 @@ h1 {
     text-transform: uppercase;
     font-weight: 300;
     font-size: clamp(2.25rem, 1.607rem + 3.214vw, 4.5rem);
+    line-height: 1;
 }
 
 h2 {
@@ -18,7 +19,7 @@ h2 {
 }
 
 p {
-    font-family: "Alata";
+    font-family: var(--font-family-secondary);
     font-size: a.rem(15);
     line-height: a.rem(25);
     opacity: 0.5;
