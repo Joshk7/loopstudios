@@ -36,8 +36,13 @@
             </picture>
             <div class="h-full w-full flex flex-col wrapper-large mx-auto">
                 <div class="flex justify-between">
-                    <img class="header__logo" src="/images/logo.svg" alt="Loopstudios" height="24" />
-                    <nav class="nav my-auto">
+                    <img
+                        class="header__logo"
+                        src="/images/logo.svg"
+                        alt="Loopstudios"
+                        height="24"
+                    />
+                    <nav class="hidden nav my-auto">
                         <ul class="nav__list gap-y-4 gap-x-8">
                             <li class="nav__item">
                                 <a class="nav__link" href="#"> About </a>
@@ -56,7 +61,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="header__menu-button hidden">
+                    <button class="header__menu-button">
                         <img src="/images/icon-hamburger.svg" alt="Menu" />
                     </button>
                 </div>
@@ -66,13 +71,17 @@
             </div>
         </header>
         <main class="main flex flex-col">
-            <section class="info">
+            <section class="info w-full wrapper-large mx-auto">
                 <picture>
                     <source
                         srcset="/images/desktop/image-interactive.jpg"
                         media="(min-width: 40em)"
                     />
-                    <img src="/images/mobile/image-interactive.jpg" alt="" />
+                    <img
+                        class="info__image"
+                        src="/images/mobile/image-interactive.jpg"
+                        alt=""
+                    />
                 </picture>
                 <div class="info__content flex flex-col gap-y-4">
                     <h2 class="info__header">The leader in interactive VR</h2>
@@ -86,68 +95,82 @@
                 </div>
             </section>
             <section class="creations">
-                <h2>Our creations</h2>
-                <button>See all</button>
-                <article>
-                    <picture>
-                        <img src="/images/mobile/image-deep-earth.jpg" alt="" />
-                    </picture>
-                    <h3>Deep earth</h3>
-                </article>
-                <article>
-                    <picture>
-                        <img
-                            src="/images/mobile/image-night-arcade.jpg"
-                            alt=""
-                        />
-                    </picture>
-                    <h3>Night arcade</h3>
-                </article>
-                <article>
-                    <picture>
-                        <img
-                            src="/images/mobile/image-soccer-team.jpg"
-                            alt=""
-                        />
-                    </picture>
-                    <h3>Soccer team VR</h3>
-                </article>
-                <article>
-                    <picture>
-                        <img
-                            src="/images/mobile/image-night-arcade.jpg"
-                            alt=""
-                        />
-                    </picture>
-                    <h3>The grid</h3>
-                </article>
-                <article>
-                    <picture>
-                        <img src="/images/mobile/image-from-above.jpg" alt="" />
-                    </picture>
-                    <h3>From up above VR</h3>
-                </article>
-                <article>
-                    <picture>
-                        <img
-                            src="/images/mobile/image-pocket-borealis.jpg"
-                            alt=""
-                        />
-                    </picture>
-                    <h3>Pocket borealis</h3>
-                </article>
-                <article>
-                    <picture>
-                        <img src="/images/mobile/image-curiosity.jpg" alt="" />
-                    </picture>
-                    <h3>The curiosity</h3>
-                </article>
-                <article>
-                    <picture>
-                        <img src="/images/mobile/image-fisheye.jpg" alt="" />
-                    </picture>
-                    <h3>Make it fisheye</h3>
-                </article>
+                <div>
+                    <h2>Our creations</h2>
+                    <button>See all</button>
+                    <article>
+                        <picture>
+                            <img
+                                src="/images/mobile/image-deep-earth.jpg"
+                                alt=""
+                            />
+                        </picture>
+                        <h3>Deep earth</h3>
+                    </article>
+                    <article>
+                        <picture>
+                            <img
+                                src="/images/mobile/image-night-arcade.jpg"
+                                alt=""
+                            />
+                        </picture>
+                        <h3>Night arcade</h3>
+                    </article>
+                    <article>
+                        <picture>
+                            <img
+                                src="/images/mobile/image-soccer-team.jpg"
+                                alt=""
+                            />
+                        </picture>
+                        <h3>Soccer team VR</h3>
+                    </article>
+                    <article>
+                        <picture>
+                            <img
+                                src="/images/mobile/image-night-arcade.jpg"
+                                alt=""
+                            />
+                        </picture>
+                        <h3>The grid</h3>
+                    </article>
+                    <article>
+                        <picture>
+                            <img
+                                src="/images/mobile/image-from-above.jpg"
+                                alt=""
+                            />
+                        </picture>
+                        <h3>From up above VR</h3>
+                    </article>
+                    <article>
+                        <picture>
+                            <img
+                                src="/images/mobile/image-pocket-borealis.jpg"
+                                alt=""
+                            />
+                        </picture>
+                        <h3>Pocket borealis</h3>
+                    </article>
+                    <article>
+                        <picture>
+                            <img
+                                src="/images/mobile/image-curiosity.jpg"
+                                alt=""
+                            />
+                        </picture>
+                        <h3>The curiosity</h3>
+                    </article>
+                    <article>
+                        <picture>
+                            <img
+                                src="/images/mobile/image-fisheye.jpg"
+                                alt=""
+                            />
+                        </picture>
+                        <h3>Make it fisheye</h3>
+                    </article>
+                </div>
             </section>
         </main>
         <footer>

@@ -174,12 +174,32 @@ p {
   row-gap: 6rem;
 }
 
+.info {
+  position: relative;
+}
+.info__image {
+  margin-inline: auto;
+}
 .info__content {
   padding: 3rem 1.5rem 0 1.5rem;
+  max-width: 33.75rem;
+  margin-inline: auto;
 }
 .info__header {
   text-align: center;
 }
 .info__description {
   text-align: center;
+}
+@media (min-width: 80em) {
+  .info__image {
+    margin: 0;
+  }
+  .info__content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white);
+    padding: 6rem 0 0 6rem;
+  }
 }/*# sourceMappingURL=style.css.map */

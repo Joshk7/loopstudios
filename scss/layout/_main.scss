@@ -7,8 +7,16 @@
 
 
 .info {
+    position: relative;
+
+    &__image {
+        margin-inline: auto;
+    }
+
     &__content {
         padding: a.rem(48) a.rem(24) 0 a.rem(24);
+        max-width: a.rem(540);
+        margin-inline: auto;
     }
 
     &__header {
@@ -17,5 +25,19 @@
 
     &__description {
         text-align: center;
+    }
+
+    @include a.breakpoint("xl") {
+        &__image {
+            margin: 0;
+        }
+
+        &__content {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: var(--white);
+            padding: a.rem(96) 0 0 a.rem(96);
+        }
     }
 }
