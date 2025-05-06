@@ -16,6 +16,14 @@ h2 {
     text-transform: uppercase;
     font-weight: 300;
     font-size: clamp(2rem, 1.648rem + 1.502vw, 3rem);
+    line-height: 1;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: clamp(1.5rem, 1.324rem + 0.751vw, 2rem);
+    line-height: 1;
 }
 
 p {

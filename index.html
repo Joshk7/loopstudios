@@ -94,83 +94,161 @@
                     </p>
                 </div>
             </section>
-            <section class="creations">
-                <div>
-                    <h2>Our creations</h2>
-                    <button>See all</button>
-                    <article>
-                        <picture>
-                            <img
-                                src="/images/mobile/image-deep-earth.jpg"
-                                alt=""
-                            />
-                        </picture>
-                        <h3>Deep earth</h3>
-                    </article>
-                    <article>
-                        <picture>
-                            <img
-                                src="/images/mobile/image-night-arcade.jpg"
-                                alt=""
-                            />
-                        </picture>
-                        <h3>Night arcade</h3>
-                    </article>
-                    <article>
-                        <picture>
-                            <img
-                                src="/images/mobile/image-soccer-team.jpg"
-                                alt=""
-                            />
-                        </picture>
-                        <h3>Soccer team VR</h3>
-                    </article>
-                    <article>
-                        <picture>
-                            <img
-                                src="/images/mobile/image-night-arcade.jpg"
-                                alt=""
-                            />
-                        </picture>
-                        <h3>The grid</h3>
-                    </article>
-                    <article>
-                        <picture>
-                            <img
-                                src="/images/mobile/image-from-above.jpg"
-                                alt=""
-                            />
-                        </picture>
-                        <h3>From up above VR</h3>
-                    </article>
-                    <article>
-                        <picture>
-                            <img
-                                src="/images/mobile/image-pocket-borealis.jpg"
-                                alt=""
-                            />
-                        </picture>
-                        <h3>Pocket borealis</h3>
-                    </article>
-                    <article>
-                        <picture>
-                            <img
-                                src="/images/mobile/image-curiosity.jpg"
-                                alt=""
-                            />
-                        </picture>
-                        <h3>The curiosity</h3>
-                    </article>
-                    <article>
-                        <picture>
-                            <img
-                                src="/images/mobile/image-fisheye.jpg"
-                                alt=""
-                            />
-                        </picture>
-                        <h3>Make it fisheye</h3>
-                    </article>
-                </div>
+            <section class="creations w-full wrapper-large mx-auto">
+                <h2 class="creations__title">Our creations</h2>
+                <button class="creations__button">See all</button>
+                <ul class="creations__list">
+                    <li class="creations__item">
+                        <a class="creations__link" href="#">
+                            <picture class="creations__picture">
+                                <source
+                                    srcset="
+                                        /images/desktop/image-deep-earth.jpg
+                                    "
+                                    media="(min-width: 80em)"
+                                />
+                                <img
+                                    class="creations__image"
+                                    src="/images/mobile/image-deep-earth.jpg"
+                                    alt=""
+                                />
+                            </picture>
+                            <h3 class="creations__header">Deep <br />earth</h3>
+                        </a>
+                    </li>
+                    <li class="creations__item">
+                        <a class="creations__link" href="#">
+                            <picture class="creations__picture">
+                                <source
+                                    srcset="
+                                        /images/desktop/image-night-arcade.jpg
+                                    "
+                                    media="(min-width: 80em)"
+                                />
+                                <img
+                                    class="creations__image"
+                                    src="/images/mobile/image-night-arcade.jpg"
+                                    alt=""
+                                />
+                            </picture>
+                            <h3 class="creations__header">
+                                Night <br />arcade
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="creations__item">
+                        <a class="creations__link" href="#">
+                            <picture class="creations__picture">
+                                <source
+                                    srcset="
+                                        /images/desktop/image-soccer-team.jpg
+                                    "
+                                    media="(min-width: 80em)"
+                                />
+                                <img
+                                    class="creations__image"
+                                    src="/images/mobile/image-soccer-team.jpg"
+                                    alt=""
+                                />
+                            </picture>
+                            <h3 class="creations__header">
+                                Soccer <br />team VR
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="creations__item">
+                        <a class="creations__link" href="#">
+                            <picture class="creations__picture">
+                                <source
+                                    srcset="/images/desktop/image-grid.jpg"
+                                    media="(min-width: 80em)"
+                                />
+                                <img
+                                    class="creations__image"
+                                    src="/images/mobile/image-grid.jpg"
+                                    alt=""
+                                />
+                            </picture>
+                            <h3 class="creations__header">The <br />grid</h3>
+                        </a>
+                    </li>
+                    <li class="creations__item">
+                        <a class="creations__link" href="#">
+                            <picture class="creations__picture">
+                                <source
+                                    srcset="
+                                        /images/desktop/image-from-above.jpg
+                                    "
+                                    media="(min-width: 80em)"
+                                />
+                                <img
+                                    class="creations__image"
+                                    src="/images/mobile/image-from-above.jpg"
+                                    alt=""
+                                />
+                            </picture>
+                            <h3 class="creations__header">
+                                From up <br />above VR
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="creations__item">
+                        <a class="creations__link" href="#">
+                            <picture class="creations__picture">
+                                <source
+                                    srcset="
+                                        /images/desktop/image-pocket-borealis.jpg
+                                    "
+                                    media="(min-width: 80em)"
+                                />
+                                <img
+                                    class="creations__image"
+                                    src="/images/mobile/image-pocket-borealis.jpg"
+                                    alt=""
+                                />
+                            </picture>
+                            <h3 class="creations__header">
+                                Pocket <br />borealis
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="creations__item">
+                        <a class="creations__link" href="#">
+                            <picture class="creations__picture">
+                                <source
+                                    srcset="/images/desktop/image-curiosity.jpg"
+                                    media="(min-width: 80em)"
+                                />
+                                <img
+                                    class="creations__image"
+                                    src="/images/mobile/image-curiosity.jpg"
+                                    alt=""
+                                />
+                            </picture>
+                            <h3 class="creations__header">
+                                The <br />curiosity
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="creations__item">
+                        <a class="creations__link" href="#">
+                            <picture class="creations__picture">
+                                <source
+                                    srcset="/images/desktop/image-fisheye.jpg"
+                                    media="(min-width: 80em)"
+                                />
+                                <img
+                                    class="creations__image"
+                                    src="/images/mobile/image-fisheye.jpg"
+                                    alt=""
+                                />
+                            </picture>
+                            <h3 class="creations__header">
+                                Make it <br />fisheye
+                            </h3>
+                        </a>
+                    </li>
+                </ul>
             </section>
         </main>
         <footer>
