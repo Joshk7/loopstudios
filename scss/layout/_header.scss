@@ -8,6 +8,19 @@
     &__menu-button {
         background-color: transparent;
         border: none;
+        cursor: pointer;
+
+        @include a.breakpoint("md") {
+            display: none;
+        }
+    }
+
+    &__nav {
+        display: none;
+
+        @include a.breakpoint("md") {
+            display: flex;
+        }
     }
 
     &__title {
@@ -15,12 +28,12 @@
         border: a.rem(2) solid white;
         padding: a.rem(24);
 
-        @include a.breakpoint("sm") {
+        @include a.breakpoint("md") {
             padding: a.rem(40);
         }
     }
 
-    @include a.breakpoint("sm") {
+    @include a.breakpoint("md") {
         padding-block: a.rem(64);
 
         &__logo {

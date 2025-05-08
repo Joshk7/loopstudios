@@ -1,0 +1,8 @@
+@use "../abstracts/" as a;
+
+.logo {
+    @include a.breakpoint("md") {
+        height: a.rem(32);
+        width: a.rem(192);
+    }
+}

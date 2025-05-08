@@ -20,6 +20,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="/css/style.css" />
+        <script src="/script.js" defer></script>
     </head>
     <body>
         <header class="header flex flex-col">
@@ -37,12 +38,12 @@
             <div class="h-full w-full flex flex-col wrapper-large mx-auto">
                 <div class="flex justify-between">
                     <img
-                        class="header__logo"
+                        class="logo"
                         src="/images/logo.svg"
                         alt="Loopstudios"
                         height="24"
                     />
-                    <nav class="hidden nav my-auto">
+                    <nav class="header__nav nav my-auto">
                         <ul class="nav__list gap-y-4 gap-x-8">
                             <li class="nav__item">
                                 <a class="nav__link" href="#"> About </a>
@@ -61,7 +62,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="header__menu-button">
+                    <button id="menu-button" class="header__menu-button">
                         <img src="/images/icon-hamburger.svg" alt="Menu" />
                     </button>
                 </div>
@@ -252,102 +253,118 @@
             </section>
         </main>
         <footer class="footer">
-            <img
-                class="footer__icon"
-                src="/images/logo.svg"
-                alt="Loopstudios"
-                height="24"
-                width="144"
-            />
-            <nav class="footer__nav nav">
-                <ul class="nav__list gap-y-4 gap-x-8">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#"> About </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#"> Careers </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#"> Events </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#"> Products </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#"> Support </a>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="footer__socials socials">
-                <ul class="socials__list flex gap-x-4">
-                    <li class="socials__item">
-                        <a href="#Facebook" class="socials__link">
-                            <img
-                                class="socials__image"
-                                src="/images/icon-facebook.svg"
-                                alt="Facebook"
-                            />
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="#Twitter" class="socials__link">
-                            <img
-                                class="socials__image"
-                                src="/images/icon-twitter.svg"
-                                alt="Twitter"
-                            />
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="Pinterest" class="socials__link">
-                            <img
-                                class="socials__image"
-                                src="/images/icon-pinterest.svg"
-                                alt="Pinterest"
-                            />
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="Instagram" class="socials__link">
-                            <img
-                                class="socials__image"
-                                src="/images/icon-instagram.svg"
-                                alt="Instagram"
-                            />
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <span class="footer__copyright"
-                >© 2021 Loopstudios. All rights reserved.</span
-            >
-        </footer>
-        <dialog>
-            <div>
-                <img src="/images/logo.svg" alt="Loopstudios" />
-                <button>
-                    <img src="/images/icon-close.svg" alt="Close Menu" />
-                </button>
+            <div class="footer__wrapper wrapper-large mx-auto">
+                <img
+                    class="footer__logo logo"
+                    src="/images/logo.svg"
+                    alt="Loopstudios"
+                    height="24"
+                    width="144"
+                />
+                <nav class="footer__nav nav">
+                    <ul class="nav__list gap-y-4 gap-x-8">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#"> About </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#"> Careers </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#"> Events </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#"> Products </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#"> Support </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer__socials socials">
+                    <ul class="socials__list flex gap-x-4">
+                        <li class="socials__item">
+                            <a href="#Facebook" class="socials__link">
+                                <img
+                                    class="socials__image"
+                                    src="/images/icon-facebook.svg"
+                                    alt="Facebook"
+                                />
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#Twitter" class="socials__link">
+                                <img
+                                    class="socials__image"
+                                    src="/images/icon-twitter.svg"
+                                    alt="Twitter"
+                                />
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="Pinterest" class="socials__link">
+                                <img
+                                    class="socials__image"
+                                    src="/images/icon-pinterest.svg"
+                                    alt="Pinterest"
+                                />
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="Instagram" class="socials__link">
+                                <img
+                                    class="socials__image"
+                                    src="/images/icon-instagram.svg"
+                                    alt="Instagram"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="footer__copyright"
+                    >© 2021 Loopstudios. All rights reserved.</span
+                >
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#"> About </a>
-                    </li>
-                    <li>
-                        <a href="#"> Careers </a>
-                    </li>
-                    <li>
-                        <a href="#"> Events </a>
-                    </li>
-                    <li>
-                        <a href="#"> Products </a>
-                    </li>
-                    <li>
-                        <a href="#"> Support </a>
-                    </li>
-                </ul>
-            </nav>
+        </footer>
+        <dialog id="dialog" class="dialog">
+            <div class="dialog__wrapper">
+                <div class="dialog__top flex justify-between items-center">
+                    <img
+                        class="dialog__logo logo"
+                        src="/images/logo.svg"
+                        alt="Loopstudios"
+                        height="24"
+                        width="144"
+                    />
+                    <button id="dialog-button" class="dialog__button">
+                        <img
+                            class="dialog__close"
+                            src="/images/icon-close.svg"
+                            alt="Close Menu"
+                            height="20"
+                            width="20"
+                        />
+                    </button>
+                </div>
+                <nav id="dialog-nav" class="dialog__nav my-auto">
+                    <ul class="dialog__list">
+                        <li class="dialog__item">
+                            <a class="dialog__link" href="#"> About </a>
+                        </li>
+                        <li class="dialog__item">
+                            <a class="dialog__link" href="#"> Careers </a>
+                        </li>
+                        <li class="dialog__item">
+                            <a class="dialog__link" href="#"> Events </a>
+                        </li>
+                        <li class="dialog__item">
+                            <a class="dialog__link" href="#"> Products </a>
+                        </li>
+                        <li class="dialog__item">
+                            <a class="dialog__link" href="#"> Support </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </dialog>
     </body>
 </html>

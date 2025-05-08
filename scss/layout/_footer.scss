@@ -4,11 +4,20 @@
     background-color: var(--black);
     color: var(--white);
     padding: a.rem(56) a.rem(52);
+    &__wrapper {
+        display: block;
+        justify-items: center;
 
-    display: block;
-    justify-items: center;
+        @include a.breakpoint("md") {
+            display: grid;
+            grid-template-areas:
+                "logo        icon      socials   socials"
+                "navigation navigation copyright copyright";
+            row-gap: a.rem(14);
+        }
+    }
 
-    &__icon {
+    &__logo {
         grid-area: logo;
         margin-bottom: a.rem(32);
 
@@ -38,16 +47,16 @@
 
     &__copyright {
         grid-area: copyright;
+        opacity: 0.5;
+        font-family: "Alata";
+        font-size: a.rem(15);
+        line-height: a.rem(25);
         @include a.breakpoint("md") {
             place-self: end;
         }
     }
 
     @include a.breakpoint("md") {
-        display: grid;
-        grid-template-areas:
-            "logo        icon      socials   socials"
-            "navigation navigation copyright copyright";
-        row-gap: a.rem(14);
+        padding-block: a.rem(44);
     }
 }

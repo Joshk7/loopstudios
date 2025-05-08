@@ -5,7 +5,6 @@
     row-gap: a.rem(96);
 }
 
-
 .info {
     position: relative;
 
@@ -100,14 +99,13 @@
         position: relative;
         cursor: pointer;
         color: var(--white);
-        
+
         &:hover,
         &:focus {
             color: var(--black);
         }
 
-        &:hover::after,
-        &:focus::after {
+        &:hover::after {
             content: "";
             position: absolute;
             inset: 0;
@@ -131,8 +129,6 @@
             bottom: a.rem(40);
         }
     }
-
-
 
     @include a.breakpoint("xl") {
         gap: a.rem(80);
