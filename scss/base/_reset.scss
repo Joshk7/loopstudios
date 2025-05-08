@@ -20,6 +20,11 @@ svg {
     max-width: 100%;
 }
 
+ul,
+li {
+    list-style-type: none;
+}
+
 :root {
     --font-family-primary: "Josefin Sans";
     --font-family-secondary: "Alata";

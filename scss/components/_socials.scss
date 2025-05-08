@@ -1,10 +1,8 @@
 @use "../abstracts/" as a;
 
-.nav {
+.socials {
     &__list {
-        display: flex;
         align-items: center;
-        list-style-type: none;
     }
 
     &__link {
@@ -18,10 +16,9 @@
     &__link:focus::after {
         content: "";
         position: absolute;
-        width: 50%;
+        width: 100%;
         height: a.rem(2);
         bottom: a.rem(-8);
-        left: 25%;
         background-color: var(--white);
         margin-block-start: a.rem(8);
     }
